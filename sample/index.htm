@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="container1"></div>
+        <div id="container2"></div>
+        <div id="anotherGrid"></div>
+    </body>
+    <script src="../dist/vendor.js"></script>
+    <script src="../dist/main.js"></script>
+
+    <script>
+        samplelib.HomePage.Create($('#container1'),$('#container2'));
+
+        $('#anotherGrid').kendoGrid();
+
+        //Create JQuery Widget
+
+        $.widget('ui.tagit', {
+            options:{
+                flag: true
+            }
+        });
+
+
+    </script>
+</html>

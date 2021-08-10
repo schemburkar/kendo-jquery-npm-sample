@@ -1,0 +1,48 @@
+{
+	"name": "kendo-jquery-npm-sample",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build:dev": "npx rimraf ./dist && webpack --mode development --watch --devtool eval-source-map",
+		"build": "npx rimraf ./dist && webpack --mode production",
+		"web": "npx serve . -l 8080"
+	},
+	"private": true,
+	"dependencies": {
+		"@progress/kendo-ui": "2020.2.617",
+		"jquery": "3.6.0",
+		"jquery-ui": "1.12.1",
+		"kendo-ui-core": "2020.2.617",
+		"lodash": "4.17.21"
+	},
+	"devDependencies": {
+		"@types/kendo-ui": "^2020.2.0",
+		"@types/node": "^15.0.1",
+		"@typescript-eslint/eslint-plugin": "^4.22.1",
+		"@typescript-eslint/parser": "^4.22.1",
+		"css-loader": "^5.2.4",
+		"eslint": "^7.25.0",
+		"eslint-webpack-plugin": "^2.5.4",
+		"mini-css-extract-plugin": "^1.5.1",
+		"node-sass": "^5.0.0",
+		"sass-loader": "^11.0.1",
+		"style-loader": "^2.0.0",
+		"ts-loader": "^9.1.1",
+		"typescript": "^4.2.4",
+		"webpack": "^5.36.1",
+		"webpack-cli": "^4.6.0"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all",
+			"not IE <= 11"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}
